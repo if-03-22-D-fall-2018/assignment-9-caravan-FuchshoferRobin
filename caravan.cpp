@@ -73,10 +73,16 @@ void add_pack_animal(Caravan caravan, PackAnimal animal)
         {
             while(current->next != 0)
             {
-                if(current->packanimal == animal) return;
+                if(current->packanimal == animal)
+                {
+                   return;
+                }
                 current = current->next;
             }
-            if(current->packanimal == animal) return;
+            if(current->packanimal == animal)
+            {
+              return;
+            }
             current->next = n_Animal;
         }
         add_to_caravan(animal, caravan);
